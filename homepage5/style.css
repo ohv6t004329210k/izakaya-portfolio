@@ -1,0 +1,132 @@
+/* ===== リセット ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* ===== レイアウト共通 ===== */
+.header,
+.article,
+.menu,
+.info {
+  padding: 30px;
+}
+
+.article-inner,
+.menu-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7fded3;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+/* ===== ヒーロー ===== */
+.hero {
+  height: 60vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("images/28896220_s.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-inner {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(36px, 6vw, 64px);
+  margin-bottom: 20px;
+}
+
+/* ===== コンセプト ===== */
+.article {
+  margin-top: 50px;
+}
+
+.items {
+  display: flex;
+  gap: 20px;
+}
+
+.item img {
+  width: 100%;
+}
+
+/* ===== メニュー ===== */
+.menu {
+  margin: 100px 0;
+}
+
+.menu-inner {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+/* ===== 店舗情報 ===== */
+.info li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* ===== フッター ===== */
+.footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+  .header,
+  .nav,
+  .items,
+  .menu-inner {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header,
+  .article,
+  .menu,
+  .info {
+    padding: 15px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
